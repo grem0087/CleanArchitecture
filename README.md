@@ -16,3 +16,5 @@ https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html
 https://jimmybogard.com/
 
 https://github.com/jbogard/ContosoUniversityDotNetCore-Pages?WT.mc_id=-blog-scottha
+
+https://docs.microsoft.com/ru-ru/dotnet/standard/modern-web-apps-azure-architecture/common-web-application-architectures
