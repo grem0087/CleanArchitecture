@@ -28,6 +28,8 @@ namespace BurgerMarket.Domain.Entities
 
         public Address Address { get; set; }
         public Customer Customer { get; set; }
+        public decimal Price { get; set; }
+        public string Description { get; set; }
         
         public ICollection<OrderProduct> Products { get; private set; }
         

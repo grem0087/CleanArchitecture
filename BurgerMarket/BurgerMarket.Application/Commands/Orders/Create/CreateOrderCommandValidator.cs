@@ -10,6 +10,9 @@ namespace BurgerMarket.Application.Commands.Orders.Create
             RuleFor(x => x.Phone).NotEmpty();
             RuleFor(x => x.Burgers.All(b => b.Quantity > 0));
 
+            RuleFor(x => x.City).MaximumLength(28);
+            RuleFor(x => x.Name).MaximumLength(28);
+            
             RuleFor(x => x.Phone)
                 .Matches(@"((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}")
                 .WithMessage("Invalid phone number");

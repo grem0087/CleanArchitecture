@@ -1,7 +1,9 @@
 namespace BurgerMarket.Domain.Enums
 {
-    public class DiscountType
+    public enum DiscountType
     {
-        
+        Minimal,
+        Avarage,
+        Maximum
     }
 }

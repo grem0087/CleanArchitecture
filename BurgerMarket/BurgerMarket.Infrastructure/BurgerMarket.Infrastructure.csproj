@@ -8,4 +8,8 @@
     <ProjectReference Include="..\BurgerMarket.Application\BurgerMarket.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="0.11.6" />
+  </ItemGroup>
+
 </Project>

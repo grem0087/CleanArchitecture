@@ -19,24 +19,8 @@ namespace BurgerMarket.Persistence
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Всё из сборки
-            //modelBuilder.ApplyConfigurationsFromAssembly(typeof(BurgerMarketDbContext).Assembly);
-            
-            modelBuilder.ApplyConfiguration(new OrderConfiguration());
-            
-            modelBuilder.Entity<OrderProduct>()
-                .HasKey(t => new { t.OrderId, t.ProductId });
-            
-            modelBuilder.Entity<OrderProduct>()
-                .HasOne(pt => pt.Order)
-                .WithMany(p => p.Products)
-                .HasForeignKey(pt => pt.OrderId);
-
-            modelBuilder.Entity<OrderProduct>()
-                .HasOne(pt => pt.Product)
-                .WithMany(t => t.Orders)
-                .HasForeignKey(pt => pt.OrderId);
-            
+            //Get all configurations from assembly
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BurgerMarketDbContext).Assembly);
             
         }
     }

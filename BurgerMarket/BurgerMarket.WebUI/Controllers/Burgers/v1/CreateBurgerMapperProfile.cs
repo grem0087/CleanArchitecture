@@ -7,7 +7,8 @@ namespace BurgerMarket.WebUI.Controllers.Burgers.v1
     {
         public CreateBurgerMapperProfile()
         {
-            CreateMap<CreateBurgerCommand, CreateBurgerDto>();
+            CreateMap<CreateBurgerCommand, CreateBurgerDto>()
+                .ForMember(s=>s.);
         }
     }
 }
